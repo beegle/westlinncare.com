@@ -44,8 +44,6 @@ Based on images/logo.jpeg:
 ### 1. Header / Navigation
 - Logo (images/logo.jpeg)
 - "West Linn Care" text
-- Navigation links to page sections
-- Sticky on scroll
 
 ### 2. Hero / Marketing Description
 - Prominent tagline (placeholder - owner will finalize)
