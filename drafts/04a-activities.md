@@ -21,7 +21,6 @@ Daily Life & Activities
 
 ## Placeholders
 
-- [ ] Specific activities offered (confirm with owner)
 - [ ] Activity photos (residents cannot be shown)
 
 ## Approved By
