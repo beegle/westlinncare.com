@@ -1,47 +1,64 @@
-# West Linn Care - Website Project
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Project Overview
-Single-page marketing website for West Linn Care, an adult foster home in West Linn, Oregon. The site will be published on GitHub Pages with the custom domain westlinncare.com.
 
-## Technical Requirements
-- **No external libraries**: Use only native HTML, CSS, and JavaScript
-- **Hosting**: GitHub Pages
-- **Domain**: westlinncare.com
-- **Single page**: All content on one scrollable page with navigation anchors
+Single-page marketing website for West Linn Care, an adult foster home in West Linn, Oregon. Published on GitHub Pages at westlinncare.com.
+
+## Development
+
+**Local preview:** Open `index.html` directly in a browser (no build step required).
+
+**Deployment:** Push to `main` branch - GitHub Pages auto-deploys.
+
+## Technical Constraints
+
+- **No external libraries** - native HTML, CSS, and JavaScript only
+- **Single page** - all content on one scrollable page with anchor navigation
+- **Relative paths** - all asset paths must be relative for GitHub Pages
+
+## Content Workflow
+
+Section content is drafted in `drafts/*.md` files. When converting to HTML:
+1. Read the section markdown from drafts folder
+2. Apply design guidelines below
+3. Use semantic HTML (section, article, nav, etc.)
+4. Insert into index.html at appropriate location
+
+## Design System
+
+### Color Palette (from logo)
+| Role | Color | Usage |
+|------|-------|-------|
+| Primary Background | `#F5EDD8` | Main sections |
+| Secondary Background | `#FFFFFF` | Alternating sections |
+| Primary Text | `#5C4D42` | Body text, headings |
+| Accent | `#B89A85` | Buttons, links |
+| Accent Hover | `#9A7B68` | Interactive states |
+| Border/Divider | `#E5DCC9` | Subtle separators |
+
+### Typography
+- System font stack (no external fonts)
+- Serif or elegant sans-serif for headings
+- Clean sans-serif for body
+
+### Tone
+- Warm and homey, not clinical
+- Emphasize "home" over "facility"
+- Simple design matching the line-art logo style
 
 ## Business Details
 - **Name**: West Linn Care
 - **Location**: West Linn, Oregon
-- **Type**: Adult foster home specializing in general aging care
-- **Capacity**: Two neighboring homes, 5 residents each (10 total)
-- **Second Home Status**: Opening Early 2025 (display as "Coming Soon")
-- **Owners/Licensors**: Ken Beegle and Cristina Beegle
-
-## Design Guidelines
-
-### Color Palette (derived from logo)
-Based on images/logo.jpeg:
-- **Primary Background**: Soft cream `#F5EDD8` (logo background)
-- **Secondary Background**: White `#FFFFFF` (alternating sections)
-- **Primary Text**: Warm brown/taupe `#5C4D42` (logo lines)
-- **Accent**: Muted rose `#B89A85` (logo heart)
-- **Accent Hover**: Deeper rose `#9A7B68`
-- **Light Border/Divider**: `#E5DCC9`
-
-### Typography
-- Use system font stack for performance
-- Headings: Serif or elegant sans-serif feel
-- Body: Clean, readable sans-serif
-
-### Tone & Feel
-- Warm and homey (not clinical or institutional)
-- Emphasize "home" over "facility"
-- Simple, clean design matching the line-art logo style
-- Gentle curves and soft edges where appropriate
+- **Type**: Adult foster home for general aging care
+- **Capacity**: Two homes, 5 residents each (10 total)
+- **Second Home**: Opening Early 2025 (display as "Coming Soon")
+- **Owners**: Ken Beegle and Cristina Beegle
 
 ## Page Sections (in order)
 
-### 1. Header / Navigation
+### 1. Header 
 - Logo (images/logo.jpeg)
 - "West Linn Care" text
 
